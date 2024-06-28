@@ -60,8 +60,7 @@ public class Service {
 
     }
 
-    public Service(Long id, String title, String description, Double price, User user) {
-        this.id = id;
+    public Service(String title, String description, Double price, User user) {
         this.title = title;
         this.description = description;
         this.price = price;
