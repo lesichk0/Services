@@ -20,4 +20,9 @@ public class ServicesServiceImpl implements ServicesService {
     public List<Service> getAllServices(){
         return serviceRepository.findAll();
     }
+
+    @Override
+    public Service saveService(Service service){
+        return serviceRepository.save(service);
+    }
 }

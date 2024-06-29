@@ -12,10 +12,6 @@ public class Service {
     private String description;
     private Double price;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id")
-    private User user;
-
     public Long getId() {
         return id;
     }
@@ -48,22 +44,13 @@ public class Service {
         this.price = price;
     }
 
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
     public Service(){
 
     }
 
-    public Service(String title, String description, Double price, User user) {
+    public Service(String title, String description, Double price) {
         this.title = title;
         this.description = description;
         this.price = price;
-        this.user = user;
     }
 }

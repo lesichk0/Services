@@ -6,4 +6,6 @@ import java.util.List;
 
 public interface ServicesService {
     List<Service> getAllServices();
+
+    Service saveService(Service service);
 }
