@@ -25,4 +25,14 @@ public class ServicesServiceImpl implements ServicesService {
     public Service saveService(Service service){
         return serviceRepository.save(service);
     }
+
+    @Override
+    public Service getServiceById(Long id){
+        return serviceRepository.findById(id).get();
+    }
+
+    @Override
+    public Service updateService(Service service){
+        return serviceRepository.save(service);
+    }
 }
