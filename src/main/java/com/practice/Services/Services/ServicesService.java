@@ -9,4 +9,5 @@ public interface ServicesService {
     Service saveService(Service service);
     Service updateService(Service service);
     Service getServiceById(Long id);
+    void deleteServiceById(Long id);
 }

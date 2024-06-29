@@ -54,4 +54,10 @@ public class ServiceController {
         servicesService.updateService(existingService);
         return "redirect:/services";
     }
+
+    @GetMapping("/services/{id}")
+    public String deleteService(@PathVariable Long id){
+        servicesService.deleteServiceById(id);
+        return "redirect:/services?deleted=true";
+    }
 }
